@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "app"
+version = "0.0.1"
+description = "Projeto destinado a aula de topicos de big data com python"
+authors = ["Luketss <lucassilluzio@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+yfinance = "^0.2.37"
+metatrader5 = "^5.0.4200"
+matplotlib = "^3.8.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
