@@ -7,11 +7,12 @@ class Yahoo:
     def __init__(self):
         pass
 
-    def get_stock_history(self, stock_code):
+    @staticmethod
+    def get_stock_history(stock_code):
         ticker = yf.Ticker(stock_code)
         hist = ticker.history(period="1mo")
         return hist
 
 
 if __name__ == "__main__":
-    yahoo = Yahoo()
+    print(Yahoo.get_stock_history(petra))

@@ -31,7 +31,7 @@ class Metatrader:
                 for prop in account_info_dict:
                     print("  {}={}".format(prop, account_info_dict[prop]))
         else:
-            raise LoginError("5023724079", mt5.last_error())
+            raise LoginError(user, mt5.last_error())
 
 
 # prepare the buy request structure
